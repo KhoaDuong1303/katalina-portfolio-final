@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected graphic design projects by Katalina across branding, packaging, editorial, advertising and illustration.">
+  <meta name="theme-color" content="#f7f1ef">
+  <title>Work — Katalina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="work">
+
+  <div class="ambient-scene" aria-hidden="true">
+    <span class="ambient-orb orb-one"></span>
+    <span class="ambient-orb orb-two"></span>
+    <span class="ambient-orb orb-three"></span>
+    <span class="ambient-grid"></span>
+  </div>
+  <div class="cursor-light" aria-hidden="true"></div>
+
+
+  <header class="site-header" id="top">
+    <a class="brand magnetic" href="index.html" aria-label="Katalina home">
+      <span class="brand-mark"><img src="images/logo-katalina.png" alt="Katalina KA monogram"></span>
+      <span class="brand-name">Katalina</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="work.html" class="active" aria-current="page">Work</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+    </nav>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+
+  <main>
+    <section class="page-hero work-page-hero section-pad" aria-labelledby="work-title">
+      <p class="eyebrow reveal">Selected Work</p><h1 id="work-title" class="reveal">Projects with a clear idea,<br><em>purpose and personality.</em></h1>
+      <p class="page-lead reveal">Explore six projects across brand identity, editorial design, packaging, advertising, illustration and interactive experiences. Click a project to open its full case study.</p>
+    </section>
+    <section class="projects section-pad work-projects" aria-label="Portfolio projects"><div class="project-grid" id="projectGrid"></div></section>
+  </main>
+  <aside class="project-view" id="projectView" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Project case study">
+    <div class="project-progress" id="projectProgress"></div>
+    <div class="project-toolbar"><button class="project-close magnetic" id="projectClose" type="button"><span>←</span> Back to Work</button><a class="project-link" href="mailto:minhkhoaduongbui@gmail.com" id="projectContactLink">Start a conversation</a></div>
+    <div id="projectContent"></div>
+  </aside>
+
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html"><span class="brand-mark"><img src="images/logo-katalina.png" alt=""></span><span>Katalina</span></a>
+    <p>Graphic Designer — Calgary, Canada</p>
+    <p>© <span id="year"></span> Katalina</p>
+  </footer>
+
+  <script src="work.js"></script>
+</body>
+</html>
