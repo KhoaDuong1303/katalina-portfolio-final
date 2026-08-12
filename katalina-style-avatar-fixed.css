@@ -769,3 +769,33 @@ button{font:inherit;color:inherit}
 /* YouTube video fallback */
 .video-backup{max-width:760px;margin:10px auto 0;text-align:center;color:var(--muted);font-size:.72rem;line-height:1.7}
 .video-backup a{color:var(--burgundy);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+
+/* =========================================================
+   AVATAR CIRCLE FIX
+   Keeps the existing rings, rotating type, labels and motion.
+   ========================================================= */
+.portrait-disc{
+  overflow:hidden !important;
+  border-radius:50% !important;
+}
+
+.portrait-disc > img,
+.portrait-flipper,
+.portrait-face,
+.portrait-face img{
+  border-radius:50% !important;
+}
+
+.portrait-disc > img,
+.portrait-photo-face img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center 35% !important;
+  display:block !important;
+}
+
+.portrait-glass{
+  border-radius:50% !important;
+  overflow:hidden !important;
+}
