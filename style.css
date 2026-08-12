@@ -403,7 +403,8 @@ button{font:inherit;color:inherit}
 
 /* The circular hero starts with the KA mark, then turns into the portrait. */
 .portrait-disc {
-  overflow: visible;
+  /* Keep both sides of the 3D flip inside the circular portrait mask. */
+  overflow: hidden;
   perspective: 1200px;
   background: transparent;
   animation: heroPortraitFloat 6.2s ease-in-out infinite;
@@ -716,7 +717,7 @@ button{font:inherit;color:inherit}
 }
 
 @media (max-width: 650px) {
-  .portrait-disc { overflow: visible; }
+  .portrait-disc { overflow: hidden; }
   .book-stage { min-height: 440px; padding: 32px 7px 42px; }
   .book-object { transform: rotateX(4deg) scale(.98); }
   .book-object:hover { transform: rotateX(4deg) scale(.98); }
